@@ -1,0 +1,136 @@
+body {
+  color: black;
+	background-color: #EEEEEE;
+	font-size: 14px;
+}
+
+h1 {
+  font-size: 50px;
+	text-align: center;
+	background-color: #5995DA;
+	padding: 120px;
+	border: 10px solid #5995DA;
+}
+
+.line {
+  background-color: black;
+  font-weight: bold;
+  padding: 5px;
+  border-top: 2px solid black;
+	border-bottom: 2px solid black;
+}
+
+p{
+	font-size: 20px;
+	border-left: 50px solid #D6E9FE;
+	border-right: 50px solid #D6E9FE;
+}
+
+.bio{
+	border-left: 300px solid #EEEEEE;
+	border-right: 300px solid #EEEEEE;
+}
+
+h2 {
+  font-size: 30px;
+	border-left: 300px solid #EEEEEE;
+	border-right: 300px solid #EEEEEE;
+	text-align: center;
+}
+
+body, h1, h2 {
+  font-family: "Verdana", sans-serif;
+}
+
+ul {
+	list-style-type: circle;
+	font-size: 20px;
+	border-left: 300px solid #EEEEEE;
+	border-right: 300px solid #EEEEEE;
+}
+
+a:link {
+  color: black;
+  text-decoration: none;
+}
+a:visited {
+  color: black;
+}
+a:hover {
+  color: purple;
+}
+a:visited:hover {
+  color: blue;
+}
+a:active {
+  color: black;
+}
+a:visited:active {
+  color: black;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.projects {
+  display: flex;
+  justify-content: space-between;
+	height: 300px;
+}
+
+.proj-item {
+  border: 5px solid black;
+	border-top: 2.5px solid black;
+	border-bottom: 2.5px solid black;
+  background-color: #D6E9FE;
+  flex: 1;
+	text-align-last: center;
+	align-items: center;
+	font-size: 30px;
+	height: 300px;
+	overflow-y: auto;
+}
+
+.proj-one, .proj-two{
+	border-top: 5px solid black;
+}
+
+.proj-nineteen, .proj-twenty{
+	border-bottom: 5px solid black;
+}
+
+.even {
+	border-left: 2.5px solid black;
+	border-right: 5px solid black;
+}
+
+.odd {
+	border-right: 2.5px solid black;
+	border-left: 5px solid black;
+}
+
+.onesize {
+	border-right: 5px solid black;
+	border-left: 5px solid black;
+}
+
+.left-side,
+.right-side {
+	border: 5px solid #EEEEEE;
+  background-color: #EEEEEE;
+  flex: initial;
+  width: 100px;
+}
+
+.nolink {
+	color: black;
+}
+
+h3 {
+	background-color: #5995DA;
+	padding: 30px;
+	border: 10px solid #5995DA;
+}
