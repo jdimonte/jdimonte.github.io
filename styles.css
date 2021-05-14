@@ -73,14 +73,10 @@ li {
 }
 
 li a {
-  color: white;
+	color: var(--light-gray);
   text-align: center;
   padding: 14px 16px;
   text-decoration: none;
-}
-
-li a:hover {
-  color: var(--light-gray);
 }
 
 .name {
@@ -159,7 +155,7 @@ a:link {
   color: black;
 }
 a:hover {
-  color: #5995DA;
+	color: white;
 }
 a{
 	color: black;
