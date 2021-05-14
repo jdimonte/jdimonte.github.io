@@ -9,19 +9,40 @@
 		<link rel="preconnect" href="https://fonts.gstatic.com">
 		<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Yusei+Magic&display=swap">
 		<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;500&display=swap">
+		<link rel="preconnect" href="https://fonts.gstatic.com">
+		<link href="https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap" rel="stylesheet">
 
 		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.min.css" integrity="sha512-17EgCFERpgZKcm0j0fEq1YCJuyAWdz9KUtv1EjVuaOz8pDnh/0nZxmU6BBXwaaxqoi9PQXnRWqlcDB027hgv9A==" crossorigin="anonymous" />
 		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.css" integrity="sha512-yHknP1/AwR+yx26cB1y0cjvQUMvEa2PFzt1c9LlS4pRQ5NOTZFWbhBig+X9G9eYW/8m0/4OXNx8pxJ6z57x0dw==" crossorigin="anonymous" />
 	</head>
 	<body>
 
+		<div class="wrap-nav">
 		<div class="nav-bar">
-			<ul class="nav">
-			  <li class="nav-elements name active"><a href="#title">Jacqueline DiMonte</a></li>
-			  <li><a class="nav-elements header-links" href="#bio">About</a></li>
-			  <li><a class="nav-elements header-links" href="#proj">Projects</a></li>
-			  <li><a class="nav-elements header-links" href="#contact">Contact</a></li>
+			<ul class="nav nav-start sticky">
+			  <li style="float:left" class="nav-elements name active">
+				<ul class="full-name">
+					<li><a class="first-name" href="#title">Jacqueline DiMonte</a></li>
+				</ul>
+			</li>
+			  <li><a class="nav-elements header-links" href="#bio">ABOUT</a></li>
+			  <li><a class="nav-elements header-links" href="#proj">PROJECTS</a></li>
+			  <li><a class="nav-elements header-links" href="#contact">CONTACT</a></li>
 			</ul>
+		</div>
+
+		<div class="nav-bar">
+			<ul class="nav nav-end sticky">
+			  <li style="float:left" class="nav-elements name active">
+				<ul class="full-name">
+					<li><a class="first-name" href="#title">Jacqueline DiMonte</a></li>
+				</ul>
+			</li>
+			  <li><a class="nav-elements header-links" href="#bio">ABOUT</a></li>
+			  <li><a class="nav-elements header-links" href="#proj">PROJECTS</a></li>
+			  <li><a class="nav-elements header-links" href="#contact">CONTACT</a></li>
+			</ul>
+		</div>
 		</div>
 
 		<div class="flex-container">
@@ -403,5 +424,25 @@
 				]
 			});
 		</script>
+
+		<script>
+			jQuery($ => {
+			const speed = 1000;
+		
+			$('a[href*="#"]')
+				.filter((i, a) => a.getAttribute('href').startsWith('#') || a.href.startsWith(`${location.href}#`))
+				.unbind('click.smoothScroll')
+				.bind('click.smoothScroll', event => {
+				const targetId = event.currentTarget.getAttribute('href').split('#')[1];
+				const targetElement = document.getElementById(targetId);
+		
+				if (targetElement) {
+					event.preventDefault();
+					$('html, body').animate({ scrollTop: $(targetElement).offset().top }, speed);
+				}
+				});
+			});
+		</script>
+
 	</body>
 </html>
