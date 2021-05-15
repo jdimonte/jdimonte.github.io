@@ -58,6 +58,10 @@ ul {
 	justify-content: flex-start;
 }
 
+.nav-elements {
+	color: var(--light-gray);
+}
+
 .nav {
 	background-color: var(--dark-gray);
 	position: fixed;
@@ -92,6 +96,28 @@ li a {
 	border-color: var(--dark-gray);
 }
 
+#title {
+	margin-top: 20rem;
+	margin-bottom: 2rem;
+}
+
+.bio{
+	padding: 5rem;
+	margin-bottom: 20rem;
+}
+
+.headshot {
+	margin: 0rem;
+	padding: 0rem;
+	margin-bottom: 5rem;
+}
+
+.about-elements {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
 .flex-container {
     display: flex;
 	background-color: var(--light-blue);
@@ -99,12 +125,21 @@ li a {
 
 .flex-child {
     flex: 1;
-	padding: 120px;
+	padding-right: 120px;
+	padding-left: 120px;
+	padding-top: 2rem;
+	padding-bottom: 2rem;
 	color: #eaececff;
 }
 
 .flex-child:first-child {
     margin-right: 20px;
+}
+
+.about-text {
+	display: flex;
+	justify-content: center;
+	align-items: center;
 }
 
 .green {
@@ -122,11 +157,11 @@ h1 {
 }
 
 .line {
-  background-color: black;
+  background-color: var(--dark-gray);
   font-weight: bold;
   padding: 5px;
-  border-top: 2px solid black;
-	border-bottom: 2px solid black;
+  border-top: 2px solid var(--dark-gray);
+	border-bottom: 2px solid var(--dark-gray);
 }
 
 p{
@@ -152,13 +187,13 @@ ul {
 }
 
 a:link {
-  color: black;
+  color: var(--dark-gray);
 }
 a:hover {
 	color: white;
 }
 a{
-	color: black;
+	color: var(--dark-gray);
 }
 
 * {
@@ -168,20 +203,20 @@ a{
 }
 
 .nolink {
-	color: black;
+	color: var(--dark-gray);
 	text-align: center;
 }
 
 h3 {
-	background-color: #001429ff;
+	background-color: var(--dark-gray);
 	padding: 30px;
-	border: 10px solid #001429ff;
+	border: 10px solid var(--dark-gray);
 }
 
 .details{
 	margin: 20px 20px;
 	background-color: #D6E9FE;
-	border: 5px solid black;
+	border: 5px solid var(--dark-gray);
 	border-radius: 25px;
 	padding: 30px 20px;
 	position: relative;
@@ -196,11 +231,11 @@ h3 {
 }
 
 .details a:hover {
-  color: #001429ff;
+  color: var(--dark-gray);
 }
 
 .details a{
-  color: black;
+  color: var(--dark-gray);
 }
 
 .miniimg{
@@ -242,4 +277,15 @@ h3 {
 .twolinks{
 	flex: 10%;
 	padding: 1px;
+}
+
+.connect-outside-div {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+
+.connect-inside-div {
+	align-items: center;
+	justify-content: space-between;
 }
